@@ -1,34 +1,28 @@
 class Node:
-    def __int__(self, data=None, next_node=None):
+    def __init__(self,data=None):
         self.data = data
         self.next_node = None
 
 
 class Stack:
 
-    def __int__(self):
-        self.head = Node
+    def __init__(self):
+        self.top = Node()
 
     def push(self, data):  # создает экземпляр класса node и добавляет его в стэк
         new_node = Node(data)
-        cur = self.head
-        while cur.next != None:
-            cur = cur.next
-        cur.next = new_node
+        new_node.next = self.top
+        self.top = new_node
 
     def next_node(self):  # возвращает "ид" следующего элемента в спике
-        return
+        return self.next_node()
 
     def top(self):  # возвращает верхний элемент списка
-        return self.head
+        return self.top()
 
     def data(self):
-        elems = []
-        cure_node = self.head
-        while cure_node.next != None:
-            cure_node = cure_node.next
-            elems.append(cure_node.data)
-        print(elems)
+        return self.data()
+
 
 
 stack = Stack()
