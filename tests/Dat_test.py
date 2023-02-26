@@ -14,6 +14,10 @@ class DatTest(TestCase):
         self.assertEqual(self.stack.top.next_node.data, 'data2')
         self.assertEqual(self.stack.top.next_node.next_node.data, 'data1')
 
+    def test_pop(self):
+        self.assertEqual(self.stack.pop(), 'data3')
+
+
 
 if __name__ == '__main__':
     main()
