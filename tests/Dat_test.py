@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-from Main.Dat import Node, stack, Stack
+from Main.Dat import Node, Stack
 import unittest
 
 
@@ -16,7 +16,6 @@ class DatTest(TestCase):
 
     def test_pop(self):
         self.assertEqual(self.stack.pop(), 'data3')
-
 
 
 if __name__ == '__main__':
